@@ -18,7 +18,7 @@ public class LinkedListInt {
     private Simpul ekor;
     private int ukuran;
 
-    /** Menambah elemen di akhir list. O(1). */
+    //Menambah elemen di akhir list. O(1).
     public void tambah(int nilai) {
         Simpul baru = new Simpul(nilai);
         if (kepala == null) {
@@ -39,7 +39,7 @@ public class LinkedListInt {
         return ukuran == 0;
     }
 
-    /** Mengambil elemen ke-i (mulai dari 0). O(n). */
+    //Mengambil elemen ke-i (mulai dari 0). O(n). 
     public int ambil(int indeks) {
         Simpul s = kepala;
         for (int i = 0; i < indeks; i++) {
@@ -48,7 +48,7 @@ public class LinkedListInt {
         return s.nilai;
     }
 
-    /** Mengubah isi list menjadi array agar mudah di-loop. O(n). */
+    //Mengubah isi list menjadi array agar mudah di-loop. O(n).
     public int[] keArray() {
         int[] hasil = new int[ukuran];
         Simpul s = kepala;

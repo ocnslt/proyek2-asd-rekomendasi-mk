@@ -35,7 +35,7 @@ public class GrafPrasyarat {
         jumlah++;
     }
 
-    /** Menambah sisi: kodePrasyarat harus lulus dulu sebelum kodeMK. */
+    // Menambah sisi: kodePrasyarat harus lulus dulu sebelum kodeMK. 
     public boolean tambahPrasyarat(String kodePrasyarat, String kodeMK) {
         int p = indeksKode.ambil(kodePrasyarat);
         int m = indeksKode.ambil(kodeMK);
@@ -58,7 +58,7 @@ public class GrafPrasyarat {
         return indeksKode.ambil(kode);
     }
 
-    /** Syarat boleh diambil: semua prasyarat LANGSUNG sudah lulus. O(derajat). */
+    // Syarat boleh diambil: semua prasyarat LANGSUNG sudah lulus. O(derajat).
     public boolean semuaPrasyaratLulus(int i, boolean[] lulus) {
         int[] p = prasyarat[i].keArray();
         for (int k = 0; k < p.length; k++) {

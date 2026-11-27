@@ -20,7 +20,7 @@ public class MataKuliah {
         this.tawaran = tawaran;
     }
 
-    /** True jika MK ditawarkan pada semester yang diminta (GANJIL / GENAP). */
+    // True jika MK ditawarkan pada semester yang diminta (GANJIL / GENAP). 
     public boolean ditawarkan(int semesterTujuan) {
         return tawaran == KEDUANYA || tawaran == semesterTujuan;
     }

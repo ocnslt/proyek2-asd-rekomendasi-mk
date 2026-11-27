@@ -65,7 +65,7 @@ public class Main {
         return MataKuliah.KEDUANYA; // "Keduanya"
     }
 
-    /** Format: Kode;Nama;sks;semester;ganjil/genap (baris pertama = header). */
+    // Format: Kode;Nama;sks;semester;ganjil/genap (baris pertama = header). 
     private static void bacaMataKuliah(String file, GrafPrasyarat graf) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(file));
         String baris = br.readLine(); // lewati header
@@ -82,7 +82,7 @@ public class Main {
         br.close();
     }
 
-    /** Format: prasyarat;matakuliah (baris pertama = header). */
+    // Format: prasyarat;matakuliah (baris pertama = header). 
     private static void bacaPrasyarat(String file, GrafPrasyarat graf) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(file));
         String baris = br.readLine(); // lewati header

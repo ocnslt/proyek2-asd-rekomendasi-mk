@@ -34,7 +34,7 @@ public class TabelHash {
         return h % panjangTabel;
     }
 
-    /** Menyimpan pasangan kunci-nilai (menimpa jika kunci sudah ada). */
+    // Menyimpan pasangan kunci-nilai (menimpa jika kunci sudah ada). 
     public void taruh(String kunci, int nilai) {
         int b = hash(kunci, bucket.length);
         for (Entri e = bucket[b]; e != null; e = e.berikut) {
@@ -50,7 +50,7 @@ public class TabelHash {
         }
     }
 
-    /** Mengembalikan nilai untuk kunci, atau -1 jika tidak ada. */
+    // Mengembalikan nilai untuk kunci, atau -1 jika tidak ada. 
     public int ambil(String kunci) {
         int b = hash(kunci, bucket.length);
         for (Entri e = bucket[b]; e != null; e = e.berikut) {
